@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2db51586013e442f86e45650c37db9fc" Name="Diagram1" ZoomLevel="57">
+        <EntityTypeShape EntityType="MEW_EMS_Model.MainMenu" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SubMenu" Width="1.5" PointX="2.875" PointY="2.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SubMenuRole" Width="1.5" PointX="0.5" PointY="3.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemLanguage" Width="1.5" PointX="19.875" PointY="0.5" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_SubMenu_MainMenu" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_SubMenuRole_SubMenu" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.RoleFunction" Width="1.5" PointX="19.875" PointY="5.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemRoleFunction" Width="1.5" PointX="17.875" PointY="6.875" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_RoleFunction_SystemRoleFunction" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemRole" Width="1.5" PointX="19.875" PointY="2.75" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_RoleFunction_SystemRole" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemUser" Width="1.5" PointX="17.875" PointY="0.5" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_SystemUser_SystemLanguage" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_SystemUser_SystemRole" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_SystemUserFilter" Width="1.5" PointX="23.125" PointY="5.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.Gender" Width="1.5" PointX="7.25" PointY="6.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterAllowanceType" Width="1.5" PointX="25.125" PointY="5.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterAnnualEvaluation" Width="1.5" PointX="15" PointY="6.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterBudgetType" Width="1.5" PointX="11.125" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterContractType" Width="1.5" PointX="23.125" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterDepartment" Width="1.5" PointX="9.25" PointY="6.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterDesignation" Width="1.5" PointX="7.25" PointY="3.75" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterFunctionalGroup" Width="1.5" PointX="15.25" PointY="3" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterGrade" Width="1.5" PointX="9.25" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterJobDegree" Width="1.5" PointX="7.25" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterJobDescription" Width="1.5" PointX="11.125" PointY="3.75" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterJobLevel" Width="1.5" PointX="13.125" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterNationality" Width="1.5" PointX="15.25" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterProgram" Width="1.5" PointX="13.125" PointY="6.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterQualification" Width="1.5" PointX="25.125" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterReasonForPromotion" Width="1.5" PointX="13.125" PointY="3.75" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterReasonForRetirement" Width="1.5" PointX="25.125" PointY="3.125" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterSector" Width="1.5" PointX="11.125" PointY="6.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterSocialStatu" Width="1.5" PointX="27.125" PointY="0.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterVacationType" Width="1.5" PointX="27.125" PointY="3.125" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_SystemUser_Gender" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_MasterDepartment_MasterProgram" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_MasterDepartment_MasterSector" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_MasterJobLevel_MasterFunctionalGroup" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_MasterGrade_MasterJobDegree" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterJobTitle" Width="1.5" PointX="9.25" PointY="3.375" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_MasterJobTitle_MasterFunctionalGroup" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalPromotion" Width="1.5" PointX="3.75" PointY="13.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalQualification" Width="1.5" PointX="2.125" PointY="13" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalQualification_MasterQualification" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPromotion_MasterReasonForPromotion" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalDataSearch" Width="1.5" PointX="7.375" PointY="10" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalQualification_SystemUser" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.MasterWorkPlace" Width="1.5" PointX="23.125" PointY="2.75" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalPriorExperience" Width="1.5" PointX="3.75" PointY="9.875" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPriorExperience_MasterJobLevel" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPriorExperience_MasterWorkPlace" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPriorExperience_SystemUser" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPromotion_MasterJobDegree" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalData" Width="1.5" PointX="0.5" PointY="9.875" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_Gender" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterBudgetType" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterDepartment" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterDesignation" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterFunctionalGroup" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterGrade" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterJobDegree" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterJobDescription" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterJobLevel" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterJobTitle" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalData_MasterNationality" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPriorExperience_PersonalData" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalPromotion_PersonalData" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalQualification_PersonalData" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalChangeJobTitle" Width="1.5" PointX="2.125" PointY="9.875" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalChangeJobTitle_MasterJobTitle" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalChangeJobTitle_PersonalData" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalChangeJobTitle_SystemUser" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalPriorExperience" Width="1.5" PointX="9" PointY="10" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalPromotion" Width="1.5" PointX="10.625" PointY="10" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalQualification" Width="1.5" PointX="12.25" PointY="10" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalChangeJobTitle" Width="1.5" PointX="9" PointY="13.875" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.TmpBonu" Width="1.5" PointX="25.125" PointY="8" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalAnnualEvaluation" Width="1.5" PointX="0.5" PointY="21.5" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalAnnualEvaluation_MasterAnnualEvaluation" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalAnnualEvaluation_PersonalData" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.BonusValidation" Width="1.5" PointX="27.125" PointY="5.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_BonusAmountMapping" Width="1.5" PointX="27.125" PointY="8.125" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.BonusAmountMapping" Width="1.5" PointX="13.875" PointY="10" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemConfiguration" Width="1.5" PointX="13.875" PointY="12.125" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.BonusAdjustment" Width="1.5" PointX="2.75" PointY="20.25" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_BonusAdjustment_PersonalData" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.SystemGender" Width="1.5" PointX="19.875" PointY="8.875" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.ColumnSelector" Width="1.5" PointX="23.125" PointY="10.625" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_PersonalAnnualEvaluation" Width="1.5" PointX="29.125" PointY="3.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_BonusEligibleList" Width="1.5" PointX="29.125" PointY="0.5" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.Bonu" Width="1.5" PointX="2.125" PointY="16.75" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_Bonus_PersonalData" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_BonusList" Width="1.5" PointX="29.125" PointY="7.25" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.PersonalInternalTransfer" Width="1.5" PointX="10.625" PointY="14.5" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalInternalTransfer_MasterDepartment" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalInternalTransfer_MasterDepartment1" />
+        <AssociationConnector Association="MEW_EMS_Model.FK_PersonalInternalTransfer_PersonalData" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.CustomReportSelection" Width="1.5" PointX="19.875" PointY="11.25" />
+        <EntityTypeShape EntityType="MEW_EMS_Model.V_BonusReport" Width="1.5" PointX="31" PointY="0.625" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
